@@ -4,13 +4,13 @@
   type="border-card"
 >
   <el-tab-pane
-    label="Parts Category"
-    name="partsCategory"
+    label="P"
+    name="p"
     style="height: 432px;"
   >
     <el-tabs
-      v-if="activeGroup === 'partsCategory'"
-      v-model="activePartsCategory"
+      v-if="activeGroup === 'p'"    // 应该可以省略
+      v-model="activeP"
     >
       <el-tab-pane
         label="Include"
@@ -27,13 +27,13 @@
     </el-tabs>
   </el-tab-pane>
   <el-tab-pane
-    label="Family Code"
-    name="familyCode"
+    label="F"
+    name="f"
     style="height: 432px;"
   >
     <el-tabs
-      v-if="activeGroup === 'familyCode'"
-      v-model="activeFamilyCode"
+      v-if="activeGroup === 'f'"
+      v-model="activeF"
     >
       <el-tab-pane
         label="Include"
@@ -50,13 +50,13 @@
     </el-tabs>
   </el-tab-pane>
   <el-tab-pane
-    label="Material Number"
-    name="materialNumber"
+    label="M"
+    name="m"
     style="height: 432px;"
   >
     <el-tabs
-      v-if="activeGroup === 'materialNumber'"
-      v-model="activeMaterialNumber"
+      v-if="activeGroup === 'm'"
+      v-model="activeM"
     >
       <el-tab-pane
         label="Include"
@@ -79,11 +79,11 @@
 export default {
   data() {
     return {
-      activeGroup: 'partsCategory',
-      activePartsCategory: 'include',
-      activeFamilyCode: 'include',
-      activeMaterialNumber: 'include'
+      activeGroup: 'p',
+      activeP: 'include',
+      activeF: 'include',
+      activeM: 'include'
     }
   },
 }
-</script
+</script>
